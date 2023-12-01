@@ -7,9 +7,11 @@ int ReadMark()
 {
     int Mark;
 
-    cout << "Please Enter Your Mark: ";
-    cin >> Mark;
-
+    do {
+        cout << "Please Enter Your Mark 1 To 100: ";
+        cin >> Mark;
+    
+    }while (Mark > 100 || Mark < 0);
 
     return Mark;
 }
@@ -23,9 +25,9 @@ bool ReturnPassOrFail(int Mark)
 void PrintPassOrFail(bool Mark)
 {
     if(Mark)
-        cout << "PASS" << endl;
+        cout << "PASS:)" << endl;
     else
-        cout << "FAIL" << endl;
+        cout << "FAIL:(" << endl;
 }
 
 
