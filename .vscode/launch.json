@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/amjad/ProgrammingSpace/ProblemSolving/Algorithm_And_Problem_Solving/SolutionsForSixToTen/SolutionsSix",
-      "program": "/home/amjad/ProgrammingSpace/ProblemSolving/Algorithm_And_Problem_Solving/SolutionsForSixToTen/SolutionsSix/build/Debug/outDebug",
+      "cwd": "/home/amjad/ProgrammingSpace/ProblemSolving/Algorithm_And_Problem_Solving/SolutionsForSixToTen/SolutionsEight",
+      "program": "/home/amjad/ProgrammingSpace/ProblemSolving/Algorithm_And_Problem_Solving/SolutionsForSixToTen/SolutionsEight/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

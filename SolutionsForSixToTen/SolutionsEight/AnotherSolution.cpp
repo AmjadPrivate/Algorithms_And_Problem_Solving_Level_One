@@ -30,7 +30,7 @@ void PrintResult (int Mark)
     if(CheckMark (Mark) == enPassAndFail::Pass)
         cout << "\n You Passed \n";
     else
-        cout << "\n You Failed \n";
+        cout << "\n You Faild \n";
 }
 
 
