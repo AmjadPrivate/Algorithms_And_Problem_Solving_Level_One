@@ -1,5 +1,6 @@
 #include <iostream>
 
+<<<<<<< HEAD
 using namespace std;
 
 
@@ -111,3 +112,17 @@ int main()
 
     return 0;
 }
+=======
+
+using namespace std;
+
+
+int main()
+{
+
+	cout << "hello world" << endl;
+
+	return 0;
+
+}
+>>>>>>> origin/main
