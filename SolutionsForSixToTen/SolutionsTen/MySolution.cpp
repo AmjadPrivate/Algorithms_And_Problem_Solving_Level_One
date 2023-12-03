@@ -8,6 +8,7 @@ int ReadNumbersOfMarks()
     short int NumberOfMarks, Counter = 1;
 
     do {
+        
         cout << "\"YOU HAVE THREE TIMES TO ENTER HOW MANY MARKS DO YOU HAVE\" :)" << endl;
         cout << "How Many Marks Do Have: ";
         cin >> NumberOfMarks; 
@@ -29,7 +30,6 @@ int ReadNumbersOfMarks()
         }
 
     }while (true);
-
 
 
 }

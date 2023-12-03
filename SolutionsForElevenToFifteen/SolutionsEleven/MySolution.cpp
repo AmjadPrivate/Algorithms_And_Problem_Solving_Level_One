@@ -39,7 +39,7 @@ int ReadHowManyMarks() // Give You How Many Marks Do Have.
 int *ReadMarks(int Marks[], int NumbersOfMarks) // Read Marks.
 {
 
-for(int i = 0; i <= NumbersOfMarks - 1; i++)
+for(int i = 0; i <= NumbersOfMarks - 1;)
 {
 
     cout << "Please Enter Mark " << i + 1 << endl;
@@ -62,6 +62,8 @@ for(int i = 0; i <= NumbersOfMarks - 1; i++)
     return Marks;
 }
 
+
+
 int SumOfMarks(int Marks[], int MarksNumbers) // Give Sum Of Marks.
 {
     int SumOfMarks = 0;
@@ -75,12 +77,33 @@ int SumOfMarks(int Marks[], int MarksNumbers) // Give Sum Of Marks.
 
 }
 
+
 float CalculateAverageOfMarks(int TotalOfMarks, int MarkNumbers) // Give Average Of Marks.
 {
     return (float)TotalOfMarks / MarkNumbers;
 }
 
 
+float CalculatePercentageOfMarks(float Average)
+{
+    return (Average / 100) * 100;
+}
+
+
+string CheckPercentage(float PrecentageResult)
+{
+    if(PrecentageResult >= 50)
+        return "\n You PASSED :) ";
+    else
+        return "\n You FAILD :( ";
+}
+
+
+void PrintResult(string AftterCheckThePercentage, float Percentage)
+{
+    cout << "Your Percentage Is: " <<  Percentage << endl;
+    cout << AftterCheckThePercentage << endl;
+}
 
 
 int main()
@@ -94,11 +117,10 @@ int main()
     else
     {
         int Marks[MarksNumber];
-
-        SumOfMarks(ReadMarks(Marks, MarksNumber), MarksNumber);
-
         
+        float PercentageResult = CalculatePercentageOfMarks( CalculateAverageOfMarks( SumOfMarks( ReadMarks( Marks, MarksNumber ), MarksNumber ), MarksNumber ) );
 
+        PrintResult( CheckPercentage(PercentageResult), PercentageResult );
     }
 
 
