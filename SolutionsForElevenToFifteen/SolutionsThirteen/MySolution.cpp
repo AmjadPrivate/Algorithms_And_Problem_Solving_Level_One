@@ -67,31 +67,53 @@ int WhatIsTheBigestNumberInArray(int arrNumbers[], int NumbersOfIndexes)
     for(int i = 0; i <= NumbersOfIndexes - 1;)
     {
 
-        while (Counter <= NumbersOfIndexes - 1)
+            
+        if(NumbersOfIndexes == 1)
         {
-            if( arrNumbers[i] > arrNumbers[ Counter + 1 ] )
-                BigestNumber = arrNumbers[i];
-            else
-                Counter++;
-        }
-        
-        if(BigestNumber >= 1)
-        {
-            return BigestNumber;
+            BigestNumber = arrNumbers[i];
             break;
         }
         else
-            i++;
+        {
+
+            while (Counter <= NumbersOfIndexes - 1)
+
+                    {
+                        if( arrNumbers[i] > arrNumbers[ Counter + 1 ] )
+                            BigestNumber = arrNumbers[i];
+                        else
+                            Counter++;
+                    }
+                    
+                    if(BigestNumber >= 1)
+                    {
+                        return BigestNumber;
+                        break;
+                    }
+                    else
+                        i++;
+        }
+
+      
     }
 
 
 }
 
 
+
 void OrderOfNumbers(int arrNumbers[], int NumbersOfIndexes)
 {
+    NumbersOfIndexes + 1;
+    cout << " \n Order Of Numbers " << endl;
+    
+    for(int i = 0; i <= NumbersOfIndexes - 1; i++)
+    {
+        NumbersOfIndexes - 1;
+        cout << "Number " << i + 1 <<  WhatIsTheBigestNumberInArray(arrNumbers, NumbersOfIndexes) << endl;
 
-
+    }
+    
 }
 
 // void PrintResults()
@@ -109,7 +131,7 @@ int main()
 
     ReadNumbers(Numbers, ResultNumbersOfIndexes);
 
-    OrderOfNumbers(ResultNumbersOfIndexes, Numbers);
+    OrderOfNumbers(Numbers, ResultNumbersOfIndexes);
 
     return 0;
 }  
