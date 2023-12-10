@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/amjad/ProgrammingSpace/ProblemSolving/Algorithm_And_Problem_Solving/SolutionsForTwentyOneToThirty/SolutionsForTwentySixToThirty/SolutionsForTwentySix",
-      "program": "/home/amjad/ProgrammingSpace/ProblemSolving/Algorithm_And_Problem_Solving/SolutionsForTwentyOneToThirty/SolutionsForTwentySixToThirty/SolutionsForTwentySix/build/Debug/outDebug",
+      "cwd": "/home/amjad/ProgrammingSpace/ProblemSolving/Algorithm_And_Problem_Solving/SolutionsForTwentyOneToThirty/SolutionsForTwentySixToThirty/SolutionsForTwentySeven",
+      "program": "/home/amjad/ProgrammingSpace/ProblemSolving/Algorithm_And_Problem_Solving/SolutionsForTwentyOneToThirty/SolutionsForTwentySixToThirty/SolutionsForTwentySeven/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [

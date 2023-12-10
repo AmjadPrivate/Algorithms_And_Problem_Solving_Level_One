@@ -2,11 +2,13 @@
 
 using namespace std;
 
-void ReadN(int& N)
+int ReadNumber()
 {
+    int N;
     cout << "Enter N: " << endl;
     cin >> N;
 
+    return N;
 }
 
 int CalculateSumOfOddNumbers(int N)
@@ -34,9 +36,8 @@ void PrintResult(int N)
 
 int main()
 {
-    int N;
+    int N = ReadNumber();
 
-    ReadN(N); // By Reference 
 
     PrintResult(N); // By Value
     return 0;
