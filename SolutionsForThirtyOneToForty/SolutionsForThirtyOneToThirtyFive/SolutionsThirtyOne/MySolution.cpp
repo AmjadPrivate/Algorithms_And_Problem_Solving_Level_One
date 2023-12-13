@@ -12,13 +12,14 @@ int ReadNumber(string Message)
     return Number;
 }
 
+
 int Power(int Number, int Power)
 {
-    int Sum = 0;
+    int Sum = 1;
 
-    for(int Counter = 1; Counter < Power; Counter++)
+    for(int Counter = 1; Counter <= Power; Counter++)
     {
-        Sum = Number * Number;
+        Sum = Sum * Number;
     }
 
     return Sum;
@@ -27,8 +28,8 @@ int Power(int Number, int Power)
 
 void PrintResult(int Number)
 {
-    cout << "\n" << Number <<" To The Power Of 2 Is " << Power(Number, 2) << endl; 
     
+    cout << "\n" << Number <<" To The Power Of 2 Is " << Power(Number, 2) << endl; 
     cout << Number <<" To The Power Of 3 Is " << Power(Number, 3) << endl; 
     cout << Number <<" To The Power Of 4 Is " << Power(Number, 4) << endl; 
 }
