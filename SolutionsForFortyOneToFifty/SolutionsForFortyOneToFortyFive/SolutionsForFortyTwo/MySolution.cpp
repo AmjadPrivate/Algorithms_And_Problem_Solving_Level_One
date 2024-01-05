@@ -38,7 +38,7 @@ int main()
     int Seconds = ReadPositiveNumber("Please Enter The Seconds: ");
 
 
-    cout << "The Total Of Seconds Is " <<  (Seconds * Second) + (Minutes * SecondsMinute) + (Hours * SecondsPerHour) + (Days * SecondsPerDay);  
+    cout << "Task Duration In Seconds: " <<  (Seconds * Second) + (Minutes * SecondsMinute) + (Hours * SecondsPerHour) + (Days * SecondsPerDay);  
 
     return 0;
 }
